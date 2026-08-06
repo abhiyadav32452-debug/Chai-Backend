@@ -2,7 +2,7 @@
   "name": "chaibackend",
   "version": "1.0.0",
   "description": "a backend at chai aur code channel",
-  "type": "commonjs",
+  "type": "module",
   "keywords": [
     "javascript",
     "backend",
@@ -12,10 +12,15 @@
   "author": "Abhinav Yadav",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon  src/index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
     "prettier": "^3.9.6"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "expess": "^0.0.1-security",
+    "mongoose": "^9.9.1"
   }
 }
